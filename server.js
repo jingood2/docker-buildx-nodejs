@@ -1,0 +1,16 @@
+// server.js
+const http = require('http');
+ 
+const hostname = '0.0.0.0';
+const port = 8080;
+ 
+const server = http.createServer((req, res) =>{
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end(`Hello from node.js in ${process.arch}!`);
+});
+ 
+server.listen(port, hostname, () =>{
+    console.log(`Server ruuning at http://${hostname}:${port}/`) ;
+})
+
