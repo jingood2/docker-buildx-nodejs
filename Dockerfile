@@ -1,6 +1,6 @@
 # Dockerfile
  
-FROM public.ecr.aws/e4e1h9a9/nodejs:latest
+FROM public.ecr.aws/eag/nodejs:16-build-arm64
 WORKDIR /usr/src/app
  
 COPY package*.json ./
